@@ -1,0 +1,13 @@
+def add_string(str1):
+    a=len(str1)
+    if a>=3:
+        ending=str1[-3:]
+        if ending=="ing":
+            
+            str1=str1+"ly"
+        else:
+            str1=str1+"ing"
+    return str1
+
+str1="com"
+print(add_string(str1))
